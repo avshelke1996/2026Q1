@@ -15,6 +15,7 @@ pipeline{
         }
         stage('build'){
             steps{
+                 sh 'chmod -R 777 /var'
                 sh 'cp -r index.html /var/www/html'
                 echo 'pasted new index.html in /var/www/html'
             }
