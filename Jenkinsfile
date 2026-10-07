@@ -17,6 +17,7 @@ pipeline{
             steps{
                  sh 'chmod -R 777 /var'
                 sh 'cp -r index.html /var/www/html'
+                sh 'chmod -R 777 /var/www/html'
                 echo 'pasted new index.html in /var/www/html'
             }
         }
