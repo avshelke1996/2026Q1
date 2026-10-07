@@ -9,7 +9,7 @@ pipeline{
         stage('clean'){
             steps{
                 sh 'chmod -R 777 /var'
-                sh 'rm -rf /var/www/html'
+                sh 'rm -rf /var/www/html/*'
                 echo 'removing older index.html'
             }
         }
